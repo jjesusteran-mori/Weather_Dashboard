@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <span class="navbar-brand w-100 text-center" href=>Weather Dashboard</span>
+    </nav>
+<!-- main div -->
+<div class="container col-12">
+    <!-- left box -->
+    <div class="col-3 leftBox pt-3">
+            <div class="search_div">
+            <h5 class="pt-2 pl-3">Search by city: </h5>
+                <form class="form-inline pl-3">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" id= "search_bar">
+                        <button id="searchbtn" class="btn btn-outline-dark my-2 my-sm-0" type="submit"><i class="fas fa-search">Search</i></button>
+                </form>
+            </div>
+            <div class="container pt-2 pl-3" id="searched_cities_container">
+            </div>
+    </div>
+ <!-- right box -->
+    <div class="today_weather col-9" id="rightBox">
+        <h2 id="cityName"></h2>
+            <div class="col-12">
+                <img id="currentDayIcon" src="">
+                <p id="currentDayTemp"></p>
+                <p id="currentDayhumidity"></p>
+                <p id="currentDayWindSpeed"></p>
+                <P id="currentUvIndex"></P>
+            </div>
+    </div>
+</div>  
+<div class="container col-12">
+    <div class="five-day-div w-100" id="lowerBox">
+                <h5 class="text-dark">Five Day Weather Forecast</h5>
+        <div class="row">
+            <div id="one" class="card-body mx-4 my-2">
+                <h5 id="0date"></h5>
+                <img id="0five_day_icon" src="">
+                <p id="0five_day_temp"></p>
+                <p id="0five_day_humidity"></p>
+            </div>
+            <div id="two" class="card-body mx-4 my-2">
+                    <h5 id="1date"></h5>
+                    <img id="1five_day_icon" src="">
+                    <p id="1five_day_temp"></p>
+                    <p id="1five_day_humidity"></p>
+            </div>
+            <div id="three" class="card-body mx-4 my-2"> 
+                    <h5 id="2date"></h5>
+                    <img id="2five_day_icon" src="">
+                    <p id="2five_day_temp"></p>
+                    <p id="2five_day_humidity"></p>
+            </div>
+            <div id="four" class="card-body mx-4 my-2">
+                    <h5 id="3date"></h5>
+                    <img id="3five_day_icon" src="">
+                    <p id="3five_day_temp"></p>
+                    <p id="3five_day_humidity"></p>
+            </div>
+            <div id="five" class="card-body mx-4 my-2">
+                    <h5 id="4date"></h5>
+                    <img id="4five_day_icon" src="">
+                    <p id="4five_day_temp"></p>
+                    <p id="4five_day_humidity"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/script.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,36 @@
+body{
+    background-color: black  ;
+}
+.navbar {
+    background-color: black;
+}
+.navbar-brand{
+    font-weight: bolder;
+    color: white;
+    font-size: xx-large;
+
+}
+.container{
+    display: flex;
+    align-content: center;
+    padding-left: 10px;
+}
+.leftBox, #rightBox, #lowerBox, .five-day-div{
+    justify-content: center;
+    border: solid;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: rgb(205, 227, 245);
+}
+.five-day-div, #rightBox, #searched_cities_container {
+    text-align: center;
+}
+#one, #two, #three, #four, #five {
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+}
+.recentSearch {
+    color: black;
+    font-weight: bold;
+}
